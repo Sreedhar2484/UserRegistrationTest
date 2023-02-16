@@ -67,6 +67,21 @@ public class UserRegistrationTest {
 		UserRegistration validation = new UserRegistration();
 		Assert.assertEquals(true, validation.checkAllEmail("nagallisreedhar1918@gmail.com"));
 	}
+    
+    static void beforeAllTestMsg() {
+        System.out.println("-----Welcome to User Registration Problem-----");
+    }
+
+    @AfterClass
+    static void afterAllTestPassedMsg() {
+        System.out.println("All Test Case Passed");
+    }
+
+    @After
+    public void afterEachTestPassMsg() {
+        System.out.println("Happy Test Case");
+    }
+
 }
 
 
