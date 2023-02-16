@@ -50,4 +50,10 @@ public class UserRegistrationTest {
         UserRegistration validation = new UserRegistration();
         Assert.assertEquals(true, validation.checkPasswordSecondRule("Srinu123"));
     }
+    
+    @Test
+    public void checkPasswordThirdRule() {
+        UserRegistration validation = new UserRegistration();
+        Assert.assertEquals(true, validation.checkPasswordThirdRule("Srinu123"));
+    }
 }
