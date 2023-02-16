@@ -9,4 +9,8 @@ public class UserRegistration {
     public boolean checkFirstName(String firstName) {
         return (Pattern.matches(VALIDATE_NAME, firstName));
     }
+    
+    public boolean checkLastName(String lastName) {
+        return (Pattern.matches(VALIDATE_NAME, lastName));
+    }
 }
