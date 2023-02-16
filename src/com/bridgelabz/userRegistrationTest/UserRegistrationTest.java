@@ -62,4 +62,11 @@ public class UserRegistrationTest {
         UserRegistration validation = new UserRegistration();
         Assert.assertEquals(true, validation.checkPasswordFourthRule("Srinu@123"));
     }
+    @Test
+	public void checkAllEmail() {
+		UserRegistration validation = new UserRegistration();
+		Assert.assertEquals(true, validation.checkAllEmail("nagallisreedhar1918@gmail.com"));
+	}
 }
+
+
