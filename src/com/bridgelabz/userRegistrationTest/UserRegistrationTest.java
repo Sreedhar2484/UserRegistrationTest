@@ -25,6 +25,10 @@ public class UserRegistrationTest {
 		UserRegistration validation = new UserRegistration();
 		Assert.assertEquals(true, validation.checkLastName("Nagalli"));
 	}
+    @Test
+	public void checkEmail() {
+		UserRegistration validation = new UserRegistration();
+		Assert.assertEquals(true, validation.checkEmail("manoharvakamullu1999@gmail.com"));
+	}
 }
 
-}
