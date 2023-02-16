@@ -10,6 +10,7 @@ public class UserRegistration {
     public static final String PASSWORD_FIRSTRULE = "[A-Za-z0-9]{8,}$";
     public static final String PASSWORD_SECONDRULE = "^[A-Z]+[a-z0-9]{7,}$";
     public static final String PASSWORD_RULE3 = "^[A-Z]+[a-z0-9]{7,}$";
+    public static final String PASSWORD_RULE4 = "^[A-Z]+[a-z0-9]{7,}[!@#$%&*]+$";
 
     public boolean checkFirstName(String firstName) {
         return (Pattern.matches(VALIDATE_NAME, firstName));
@@ -37,5 +38,9 @@ public class UserRegistration {
     
     public boolean checkPasswordThirdRule(String thirdPassword) {
         return (Pattern.matches(PASSWORD_RULE3, thirdPassword));
+    }
+    
+    public boolean checkPasswordFourthRule(String fourthPassword) {
+        return (Pattern.matches(PASSWORD_RULE4, fourthPassword));
     }
 }
