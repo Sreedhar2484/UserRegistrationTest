@@ -44,4 +44,10 @@ public class UserRegistrationTest {
         UserRegistration validation = new UserRegistration();
         Assert.assertEquals(true, validation.checkPassword("Sri19189"));
     }
+    
+    @Test
+    public void checkPasswordSecondRule() {
+        UserRegistration validation = new UserRegistration();
+        Assert.assertEquals(true, validation.checkPasswordSecondRule("Srinu123"));
+    }
 }
